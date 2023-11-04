@@ -13,6 +13,10 @@ AWS_DEFAULT_REGION us-east-1
 AWS_ACCOUNT_ID 364810126671
 IMAGE_REPO_NAME phuongnnt1-repo
 IMAGE_TAG 1.0.1
+AWS_ACCESS_KEY_ID xxx
+AWS_SECRET_ACCESS_KEY xxx
+AWS_SESSION_TOKEN xxx
+AWS_REGION us-east-1
 
 # Create EKS Cluster and Node Group
 eksctl create cluster --name phuongnnt1-cluster --version 1.25 --region us-east-1 --nodegroup-name phuongnnt1-nodegroup --node-type t3.medium --nodes 2
