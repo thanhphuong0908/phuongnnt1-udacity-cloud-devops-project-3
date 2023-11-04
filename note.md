@@ -7,6 +7,13 @@ git config --global user.email thanhphuong09081999@gmail.com
 aws configure
 aws configure set aws_session_token xxx
 
+# Create AWS ECR using AWS Console
+# Create AWS Codebuild Project using AWS Console
+AWS_DEFAULT_REGION us-east-1
+AWS_ACCOUNT_ID 364810126671
+IMAGE_REPO_NAME phuongnnt1-repo
+IMAGE_TAG 1.0.1
+
 # Create EKS Cluster and Node Group
 eksctl create cluster --name phuongnnt1-cluster --version 1.25 --region us-east-1 --nodegroup-name phuongnnt1-nodegroup --node-type t3.medium --nodes 2
 <!-- eksctl create cluster --name phuongnnt1-cluster --region us-east-1 --version 1.27 --vpc-private-subnets subnet-03580e5106eb03120,subnet-051ffa44d3d7a85d9 --without-nodegroup -->
